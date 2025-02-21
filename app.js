@@ -41,7 +41,7 @@ function submitForm(e) {
     })
     .then(() => {
       alert("Account created successfully!");
-      window.location.href = "./Dashboard/dashboard.html";
+      window.location.replace = "./Dashboard/dashboard.html";
     })
     .catch((error) => {
       var errorCode = error.code;
@@ -62,7 +62,7 @@ function signInWithGoogle() {
       }, { merge: true });
     })
     .then(() => {
-      window.location.href = "./Dashboard/dashboard.html";
+      window.location.replace = "./Dashboard/dashboard.html";
     })
     .catch((error) => {
       var errorMessage = error.message;
