@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <h1>Dashboard</h1>
+        <div id="user-info"></div>
+        <form id="post-form">
+            <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+            <button type="submit">Post</button>
+        </form>
+        <div id="posts"></div>
+        <div id="user-search">
+            <input type="text" id="search-input" placeholder="Search users">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="search-results"></div>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/login.png" type="image/x-icon">
+    <style>
+      #main {
+        height: 300px;
+        width: 600px;
+        margin: 20px 0;
+      }
+      body {
+        padding: 50px 0;
+      }
+      .error {
+        color: red;
+        font-size: 0.5em;
+      }
+    </style>
+</head>
+<body>
+
+  <div id="main">
+    <h1>Sign Up</h1>
+    <form id="signupForm">
+      <input type="text" id="username" placeholder="Enter your name" required>
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <input type="password" id="password" placeholder="Enter password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    
+    <span onClick="window.location.href='./Login/login.html'">Already have an account? Login</span>
+    <button id="googleSignIn">Sign up with Google</button>
+  </div>
+  
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
