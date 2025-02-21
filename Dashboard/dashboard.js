@@ -27,7 +27,7 @@ auth.onAuthStateChanged(function(user) {
     loadPosts();
   } else {
     // No user is signed in, redirect to login page
-    window.location.href = "login.html";
+    window.location.replace = "../index.html";
   }
 });
 
@@ -100,7 +100,7 @@ document.getElementById('search-button').addEventListener('click', function() {
 
 document.getElementById('logout').addEventListener('click', function() {
   auth.signOut().then(() => {
-    window.location.href = "login.html";
+    window.location.replace = "../Login/login.html";
   }).catch((error) => {
     console.log("Error signing out: ", error);
   });
